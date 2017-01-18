@@ -47,7 +47,7 @@ vagrantfile:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
         synced_folder:
             vflsf_w6yv2tbp0vo3:
-                source: ./
+                source: ./projects
                 target: /var/www
                 sync_type: default
                 smb:
