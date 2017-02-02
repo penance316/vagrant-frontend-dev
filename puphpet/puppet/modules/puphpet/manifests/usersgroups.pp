@@ -49,7 +49,7 @@ class puphpet::usersgroups {
     if ! defined(User[$user]) {
       user { $user:
         ensure     => present,
-        shell      => '/bin/bash',
+        shell      => '/bin/zsh',
         home       => "/home/${user}",
         managehome => true,
         groups     => $groups,

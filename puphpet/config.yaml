@@ -93,6 +93,7 @@ vagrantfile:
 server:
     install: '1'
     packages:
+        - git
         - vim
         - htop
 users_groups:

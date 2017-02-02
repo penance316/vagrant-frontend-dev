@@ -28,7 +28,7 @@ class puphpet::server {
 
   @user { $::ssh_username:
     ensure     => present,
-    shell      => '/bin/bash',
+    shell      => '/bin/zsh',
     home       => $user_home,
     managehome => $manage_home,
     groups     => ['www-data', 'www-user'],
@@ -41,7 +41,7 @@ class puphpet::server {
     if ! defined(User[$key]) {
       user { $key:
         ensure  => present,
-        shell   => '/bin/bash',
+        shell   => '/bin/zsh',
         groups  => 'www-data',
         require => Group['www-data']
       }
